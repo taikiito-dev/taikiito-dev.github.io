@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taiki Ito</title>
+<style>
+  :root {
+    --navy: #002d72;
+    --navy-dark: #001d4d;
+    --ink: #1a1a1a;
+    --sub: #5b6472;
+    --bg: #f4f6f9;
+    --card: #ffffff;
+    --border: #e3e7ee;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, var(--bg) 0%, #e9edf3 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Segoe UI", Roboto, sans-serif;
+    padding: 32px 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--card);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0,45,114,0.14), 0 2px 8px rgba(0,0,0,0.06);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .banner {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    padding: 34px 28px 26px;
+    color: #fff;
+    text-align: center;
+  }
+  .banner .name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  .banner .tagline {
+    margin-top: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    opacity: 0.85;
+    line-height: 1.5;
+  }
+  .body {
+    padding: 24px 28px 28px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .link-tile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--ink);
+    transition: transform 0.08s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .link-tile:hover {
+    border-color: var(--navy);
+    box-shadow: 0 4px 14px rgba(0,45,114,0.10);
+  }
+  .link-tile:active { transform: scale(0.98); }
+  .link-tile .icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: var(--navy);
+  }
+  .link-tile .text-title {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .link-tile .text-sub {
+    font-size: 12px;
+    color: var(--sub);
+    margin-top: 1px;
+  }
+  .link-tile .arrow {
+    margin-left: auto;
+    color: var(--sub);
+    font-size: 14px;
+  }
+  .footer-note {
+    text-align: center;
+    font-size: 11px;
+    color: var(--sub);
+    margin-top: 22px;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="banner">
+    <div class="name">Taiki Ito</div>
+    <div class="tagline">Tinkering with computers on the side.</div>
+  </div>
+
+  <div class="body">
+    <div class="links">
+      <a class="link-tile" href="https://blog.taikiito.com" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+        <div>
+          <div class="text-title">Blog</div>
+          <div class="text-sub">開発日記 / devlog</div>
+        </div>
+        <span class="arrow">&#8594;</span>
+      </a>
+
+      <a class="link-tile" href="https://singlish.taikiito.com" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div>
+          <div class="text-title">Singlish-lah</div>
+          <div class="text-sub">シングリッシュ用語集</div>
+        </div>
+        <span class="arrow">&#8594;</span>
+      </a>
+
+      <a class="link-tile" href="https://card.taikiito.com" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        <div>
+          <div class="text-title">Business Card</div>
+          <div class="text-sub">デジタル名刺</div>
+        </div>
+        <span class="arrow">&#8594;</span>
+      </a>
+    </div>
+
+    <div class="footer-note">taikiito.com</div>
+  </div>
+</div>
+
+</body>
+</html>
